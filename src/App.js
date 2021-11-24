@@ -15,10 +15,10 @@ function App() {
         <>
             <Navbar />
             <Routes>
-                
                 <Route exact path="/" element={<Home />} />;
                 <Route exact path="/rooms/" element={<Rooms />} />;
-                <Route exact path="/single-room/" element={<SingleRoom />} />;
+                <Route exact path="/rooms/:slug" element={<SingleRoom />} />
+                ;
                 <Route path="/*" element={<Error />} />;
             </Routes>
         </>
